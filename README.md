@@ -7,12 +7,6 @@ Slugify :snail:
 </br>
 <i>TL;DR:</i> <code>input | slugify > output</code>
 </p>
-<p align="center">
-<img src="https://badgen.net/badge//cli/blue?icon=terminal" alt="Terminal badge"/>
-<img src="https://badgen.net/travis/Mayeu/slugify?icon=travis" alt="Travis Pipeline status badge"/>
-<a href="https://gitlab.com/Mayeu/slugify/commits/master"><img alt="pipeline status" src="https://gitlab.com/Mayeu/slugify/badges/master/pipeline.svg" /></a>
-<img src="https://badgen.net/github/release/Mayeu/slugify?icon=github" alt="GitHub release badge"/>
-</p>
 
 👉 This is a really simple (*aka "featureless"*) tool to generate slugs :snail:
 directly from your command line. It does not have any option by design and work
@@ -31,7 +25,7 @@ It does not aim to be perfect since the goal is to be able to use it in a *drop
 If you are the adventurous kind, you can simply `curl` & install the script
 directly from the web 🌐. Here is a one-liner that may break your system:
 ```
-$ curl https://slugify.vercel.app > slugify && chmod +x slugify && sudo mv slugify /usr/local/bin/
+$ curl https://raw.githubusercontent.com/dbursem/slugify/refs/heads/master/slugify > slugify && chmod +x slugify && sudo mv slugify /usr/local/bin/
 ```
 (Yes, this will ask for your password, as stated before this may break your
 system. Paste with care.)
@@ -39,7 +33,7 @@ system. Paste with care.)
 Otherwise, just clone this repository somewhere and manually copy the `slugify`
 script anywhere your `$PATH` point to (my favorite place is my `~/bin` folder):
 ```
-$ git clone https://github.com/Mayeu/slugify
+$ git clone https://github.com/dbursem/slugify
 $ cd slugify
 $ cp slugify ~/bin/
 ```
@@ -81,7 +75,7 @@ have one to spare.
 
 The tests are automatically run on each commits (including Pull Requests) with
 the help of [Travis CI](https://travis-ci.org/), and
-[GitLab](https://gitlab.com/Mayeu/slugify/pipelines). The following OS are
+[GitLab](https://gitlab.com/dbursem/slugify/pipelines). The following OS are
 tested:
 
 * Travis CI:
@@ -115,5 +109,5 @@ This software is distributed under the GPLv3 license. Please check the
 
 ## :snail: Embrace the slug
 <h1 align="center">
-<img src="https://github.com/Mayeu/slugify/blob/master/doc/img/brain-slug.jpeg" alt="Propaganda poster for the brain slug federation. Picturing Fry from the Futurama show being controlled by a brain slug">
+<img src="https://github.com/dbursem/slugify/blob/master/doc/img/brain-slug.jpeg" alt="Propaganda poster for the brain slug federation. Picturing Fry from the Futurama show being controlled by a brain slug">
 </h1>
