@@ -27,6 +27,8 @@ to_slug() {
   export LC_ALL=POSIX
   #replace ' with nothing
   sed -e "s/[\']//g" |
+  #transliterate special chars
+  iconv -f UTF-8 -t ASCII//TRANSLIT |
   # Keep only alphanumeric value
   sed -e 's/[^[:alnum:]]/-/g' |
   # Keep only one dash if there is multiple one consecutively
