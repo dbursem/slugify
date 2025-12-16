@@ -25,6 +25,8 @@ to_slug() {
   # Forcing the POSIX local so alnum is only 0-9A-Za-z
   export LANG=POSIX
   export LC_ALL=POSIX
+  #transliterate special chars
+  iconv -f UTF-8 -t ASCII//TRANSLIT |
   # Keep only alphanumeric value
   sed -e 's/[^[:alnum:]]/-/g' |
   # Keep only one dash if there is multiple one consecutively
