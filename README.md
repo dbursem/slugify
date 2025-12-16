@@ -14,7 +14,7 @@ best by piping one line at a time to it:
 
 ```
 $ echo "I'm no slug 🐌." | slugify
-i-m-no-slug
+im-no-slug
 ```
 
 It does not aim to be perfect since the goal is to be able to use it in a *drop
@@ -43,14 +43,14 @@ $ cp slugify ~/bin/
 The best way to use this tool is to directly pipe a line to it:
 ```
 $ echo 'Slug me bébé!!1!' | slugify
-slug-me-b-b-1
+slug-me-bebe-1
 ```
 
 But you can also pass the line to slug as an argument. Be sure to quote your
 text!
 ```
 $ slugify "I'm no slug."
-i-m-no-slug
+im-no-slug
 ```
 
 Finally, you can see the minimal help by calling the script without any
